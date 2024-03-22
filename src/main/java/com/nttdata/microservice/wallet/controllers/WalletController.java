@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.nttdata.microservice.wallet.collections.WalletCollection;
 import com.nttdata.microservice.wallet.dto.WalletAcceptPurchaseDto;
 import com.nttdata.microservice.wallet.dto.WalletCreateDto;
+import com.nttdata.microservice.wallet.dto.WalletDto;
 import com.nttdata.microservice.wallet.dto.WalletGeneratePurchaseDto;
 import com.nttdata.microservice.wallet.exceptions.CustomerInactiveException;
 import com.nttdata.microservice.wallet.services.IWalletService;
@@ -33,9 +34,9 @@ public class WalletController {
 	private IWalletService service;
 	
 	@GetMapping("/findAll")
-    public Flux<WalletCollection> findAll(){
+    public Flux<WalletDto> findAll(){
         log.info("Get operation in /wallets");
-        return service.findAll();
+        return service.findAllDto();
     }
 	
 	@GetMapping("/findWalletById/{id}")

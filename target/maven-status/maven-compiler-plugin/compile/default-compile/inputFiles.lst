@@ -17,6 +17,7 @@ C:\Users\csanmont\Documents\bootcamp50\projects\microservice-wallet\src\main\jav
 C:\Users\csanmont\Documents\bootcamp50\projects\microservice-wallet\src\main\java\com\nttdata\microservice\wallet\enums\CustomerStateEnum.java
 C:\Users\csanmont\Documents\bootcamp50\projects\microservice-wallet\src\main\java\com\nttdata\microservice\wallet\enums\OperationStateEnum.java
 C:\Users\csanmont\Documents\bootcamp50\projects\microservice-wallet\src\main\java\com\nttdata\microservice\wallet\collections\Operation.java
+C:\Users\csanmont\Documents\bootcamp50\projects\microservice-wallet\src\main\java\com\nttdata\microservice\wallet\dto\WalletDto.java
 C:\Users\csanmont\Documents\bootcamp50\projects\microservice-wallet\src\main\java\com\nttdata\microservice\wallet\dto\WalletCreateDto.java
 C:\Users\csanmont\Documents\bootcamp50\projects\microservice-wallet\src\main\java\com\nttdata\microservice\wallet\enums\CustomerTypeEnum.java
 C:\Users\csanmont\Documents\bootcamp50\projects\microservice-wallet\src\main\java\com\nttdata\microservice\wallet\controllers\WalletController.java

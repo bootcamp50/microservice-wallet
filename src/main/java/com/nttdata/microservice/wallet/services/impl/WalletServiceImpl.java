@@ -19,6 +19,7 @@ import com.nttdata.microservice.wallet.collections.WalletCollection;
 import com.nttdata.microservice.wallet.dto.CustomerDto;
 import com.nttdata.microservice.wallet.dto.WalletAcceptPurchaseDto;
 import com.nttdata.microservice.wallet.dto.WalletCreateDto;
+import com.nttdata.microservice.wallet.dto.WalletDto;
 import com.nttdata.microservice.wallet.dto.WalletGeneratePurchaseDto;
 import com.nttdata.microservice.wallet.enums.CustomerStateEnum;
 import com.nttdata.microservice.wallet.enums.CustomerTypeEnum;
@@ -66,6 +67,20 @@ public class WalletServiceImpl implements IWalletService {
         log.info("End of operation to find a wallet by id");
         return retrievedWallet;
     }
+	
+	@Override
+    public Flux<WalletDto> findAllDto() {
+
+        log.info("Start of operation to retrieve all wallets");
+
+        log.info("Retrieving all credits");
+        Flux<WalletDto> retrievedWallet = repository.findAll().map(walletUtils::toWalletDto);
+        log.info("All wallets retrieved successfully");
+
+        log.info("End of operation to retrieve all wallets");
+        return retrievedWallet;
+    }
+	
 
     @Override
     public Flux<WalletCollection> findAll() {
