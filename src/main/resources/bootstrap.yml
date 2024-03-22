@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: microservice-wallet
+  cloud:
+    config:
+      enabled: true
+      label: main
+      uri: http://bank-config:8888
